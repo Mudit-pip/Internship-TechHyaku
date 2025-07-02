@@ -4,17 +4,19 @@ import Courses from './components/Courses.jsx'
 import Collaboration from './components/Collaboration.jsx'
 import Home from './components/Home.jsx'
 import Video from './components/Video.jsx'
+import WhyUs from './components/whyUs.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header/>
+      {/* <Header/>
       <Home/>
-      <Courses/>
-      <Collaboration/>
-      <Video/>
+      <Courses/> */}
+      <WhyUs/>
+      {/* <Collaboration/> */}
+      {/* <Video/> */}
     </>
   )
 }
