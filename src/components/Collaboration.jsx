@@ -7,7 +7,8 @@ import Collaborator6 from '../assets/Collaborations/collaborator6.png'
 import Collaborator1 from '../assets/Collaborations/collaborator1.png'
 function Collaboration() {
   return (
-    <div class='flex flex-col bg-gray-100 h-screen w-screen overflow-hidden'>
+    <section id='collab'>
+      <div class='flex flex-col bg-gray-100 h-screen w-[95%] ml-10 overflow-hidden'>
       <h2 class=' h-24 flex justify-center text-5xl font-semibold m-2'>Our Success</h2>
       <div class='flex flex-wrap justify-center items-center p-4 group'>
         <div class='bg-gray-300 h-48 w-48 flex flex-col justify-center items-center m-2 transition-all duration-500 group-hover:scale-90 hover:scale-105'>
@@ -46,6 +47,8 @@ function Collaboration() {
         </div>
       </div>
     </div>
+    </section>
+    
   )
 }
 

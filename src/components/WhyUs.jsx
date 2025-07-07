@@ -3,7 +3,8 @@ import Robot from '../assets/WhyUs/robot.png'
 
 function WhyUs() {
   return (
-    <div class='flex flex-col bg-gray-100 h-screen w-screen overflow-x-hidden'>
+    <section id='whyus'>
+        <div class='flex flex-col bg-gray-100 h-screen w-[95%] ml-10 overflow-x-hidden'>
         <h2 class="text-5xl font-semibold font-serif m-4 flex justify-center mt-8">Why Choose Us?</h2>
         <div class="bg-[#245D51] w-full flex flex-col items-center py-10 relative space-y-20">
             <div class="flex w-[50rem] items-center space-x-10 ">
@@ -55,6 +56,8 @@ function WhyUs() {
             </div>
         </div>
     </div>
+    </section>
+    
   )
 }
 

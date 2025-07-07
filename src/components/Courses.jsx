@@ -30,7 +30,8 @@ function Courses() {
   };
 
   return (
-    <div className="w-[90vw] m-auto py-12 bg-white">
+    <section id='courses' className="bg-[#F0F4F3]">
+      <div className="w-[90vw] m-auto py-12 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-[#1A6B5C] text-center mb-10">
         Our Courses
       </h2>
@@ -61,6 +62,8 @@ function Courses() {
         ))}
       </Slider>
     </div>
+    </section>
+    
   );
 }
 

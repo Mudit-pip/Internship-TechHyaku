@@ -5,18 +5,30 @@ import Collaboration from './components/Collaboration.jsx'
 import Home from './components/Home.jsx'
 import Video from './components/Video.jsx'
 import WhyUs from './components/whyUs.jsx'
+import HowItWorks from './components/HowItWorks.jsx'
+import AboutSection from './components/About.jsx'
+import AchievementsSection from './components/Achievements.jsx'
+import KitsSection from './components/KitSection.jsx'
+import ContactSection from './components/ContactUs.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Header/> */}
-      {/* <Home/> */}
+      <Header/>
+      <Home/>
       <Courses/>
       <WhyUs/>
+      <AboutSection/>
+      <HowItWorks/>
       <Collaboration/>
+      <AchievementsSection/>
+      <KitsSection/>
       <Video/>
+      <ContactSection/>
+      <Footer/>
     </>
   )
 }
