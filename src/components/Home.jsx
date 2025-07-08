@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import Logo from '../assets/Logo.png';
 
 const Home = () => {
@@ -15,22 +15,28 @@ const Home = () => {
             At Hyaku Innovative Technologies, we empower students to unlock their creative potential through Robotics, AI, IoT, and more — fostering curiosity and future-ready skills.
           </p>
           <div className="flex gap-4">
-            <Link
-              to="/courses"
-              className="bg-[#2c5f55] text-white px-6 py-3 rounded-md hover:bg-[#2c5f55] transition"
+            <ScrollLink
+              to="courses"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="bg-[#2c5f55] text-white px-6 py-3 rounded-md hover:bg-[#2c5f55] transition cursor-pointer"
             >
               Explore Courses
-            </Link>
-            <Link
-              to="/contact"
-              className="border border-[#2c5f55] text-[#2c5f55] px-6 py-3 rounded-md hover:bg-[#2c5f55] hover:text-white transition"
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="border border-[#2c5f55] text-[#2c5f55] px-6 py-3 rounded-md hover:bg-[#2c5f55] hover:text-white transition cursor-pointer"
             >
               Contact Us
-            </Link>
+            </ScrollLink>
           </div>
         </div>
 
-        {/* Right Image / Animation Placeholder */}
+        {/* Right Image */}
         <div className="flex-1">
           <img
             src={Logo}
