@@ -25,13 +25,13 @@ const Home = () => {
               Explore Courses
             </ScrollLink>
             <ScrollLink
-              to="contact"
+              to="about"
               smooth={true}
               duration={500}
               offset={-70}
               className="border border-[#2c5f55] text-[#2c5f55] px-6 py-3 rounded-md hover:bg-[#2c5f55] hover:text-white transition cursor-pointer"
             >
-              Contact Us
+              About Us
             </ScrollLink>
           </div>
         </div>

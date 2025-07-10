@@ -40,7 +40,7 @@ const AboutSection = () => {
           text={`To build a generation of tech-savvy innovators by combining imagination, hands-on experimentation, and 21st-century skills. 
 We empower students through interactive learning kits, structured courses, and expert mentorship.
 
-Whether it’s building a robot, designing an app, or exploring IoT — we ensure every child learns by doing. 
+Whether it's building a robot, designing an app, or exploring IoT — we ensure every child learns by doing. 
 Our mission is to make cutting-edge technology education accessible, fun, and impactful for every school-going student in India.`}
           image={about1}
         />
@@ -61,12 +61,12 @@ By bridging the gap between textbook theory and practical application, Tech Hyak
           title="Our Impact"
           text={`With presence in 100+ schools and support to multiple ATL (Atal Tinkering Lab) programs, Tech Hyaku has touched thousands of lives.
 
-Our students have:
-✔ Built innovative robots, drones, and IoT devices
-✔ Represented India in national & international competitions
-✔ Received accolades from institutions and government bodies
+                Our students have:
+                • Built innovative robots, drones, and IoT devices
+                • Represented India in national & international competitions
+                • Received accolades from institutions and government bodies
 
-From first-time coders to national champions, we celebrate every milestone of growth and invention.`}
+                From first-time coders to national champions, we celebrate every milestone of growth and invention.`}
           image={about3}
         />
       </div>

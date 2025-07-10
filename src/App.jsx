@@ -19,16 +19,16 @@ function App() {
     <>
       <Header/>
       <Home/>
-      <Courses/>
-      <WhyUs/>
       <AboutSection/>
-      <HowItWorks/>
-      <Collaboration/>
-      <AchievementsSection/>
+      <WhyUs/>
+      <Courses/>
       <KitsSection/>
       <Video/>
-      <ContactSection/>
+      <AchievementsSection/>
+      <Collaboration/>
       <Footer/>
+      {/* <HowItWorks/> */}
+      {/* <ContactSection/> */}
     </>
   )
 }

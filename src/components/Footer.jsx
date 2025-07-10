@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/Icon.png';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -10,17 +11,17 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={Logo} alt="TechHyaku Logo" className="h-10 bg-white" />
+            <img src={Logo} alt="TechHyaku Logo" className="h-12" />
             <span className="text-xl font-bold">Tech Hyaku</span>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             Empowering young minds through STEM, Robotics, AI, and IoT. We deliver hands-on learning with national-level achievements and ATL support across India.
           </p>
           <div className="flex gap-4 mt-6 text-xl text-white">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaLinkedinIn />
-            <FaYoutube />
+            <a href="https://www.facebook.com" target='_blank'><FaFacebookF /></a>
+            <a href="https://www.instagram.com/tech_hyaku/" target='_blank'><FaInstagram /></a>
+            <a href="https://www.linkedin.com/feed/" target='_blank'><FaLinkedinIn /></a>
+            <a href="https://www.youtube.com/@techhyaku" target='_blank'><FaYoutube /></a>
           </div>
         </div>
 
@@ -28,11 +29,52 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Quick Links</h4>
           <ul className="text-gray-400 text-sm space-y-2">
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Kits</li>
-            <li>Workshops</li>
-            <li>Pricing</li>
+            <ScrollLink
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white"
+              >
+                <li className='hover:text-white mb-1'>Home</li>
+            </ScrollLink>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>About Us</li>
+              
+            </ScrollLink>
+            <ScrollLink
+              to="courses"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Courses</li>
+              
+            </ScrollLink>
+            <ScrollLink
+              to="kits"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Pricing</li>
+              
+            </ScrollLink>
+            
+            <ScrollLink
+              to="video"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Videos</li>
+            </ScrollLink>
+            
           </ul>
         </div>
 
@@ -40,10 +82,39 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">About TechHyaku</h4>
           <ul className="text-gray-400 text-sm space-y-2">
-            <li>Company Vision</li>
-            <li>Our Mentors</li>
-            <li>Achievements</li>
-            <li>ATL Support</li>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>About Us</li>
+            </ScrollLink>
+            <ScrollLink
+              to="whyus"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Why Choose Us</li>
+            </ScrollLink>
+            <ScrollLink
+              to="achievements"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Achievements</li>
+            </ScrollLink>
+            <ScrollLink
+              to="collab"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="cursor-pointer hover:text-white">
+                <li className='hover:text-white mb-1'>Collaborations</li>
+            </ScrollLink>
+            
           </ul>
         </div>
 
@@ -51,10 +122,15 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Support</h4>
           <ul className="text-gray-400 text-sm space-y-2">
-            <li>FAQs</li>
-            <li>Contact Us</li>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
+            <li className='hover:text-white'>Number</li>
+            <li className='hover:text-white'>techhyaku@gmail.com</li>
+            <a href="https://www.instagram.com/tech_hyaku/">
+              <li className='hover:text-white mb-2'>Instagram</li>
+            </a>
+            
+            <a href="https://www.linkedin.com/feed/">
+              <li className='hover:text-white'>LinkedIn</li>
+            </a>
           </ul>
         </div>
 
@@ -65,12 +141,15 @@ const Footer = () => {
             Keep up with the latest in Robotics, STEM & IoT. Subscribe now!
           </p>
           <div className="flex rounded-full overflow-hidden bg-white shadow-md">
-            <input
+            {/* <input
               type="email"
               placeholder="techhyaku@gmail.com"
               className="px-4 py-2 w-full text-gray-700 focus:outline-none select-none"
-            />
-            
+            /> */}
+            <div className="px-4 py-2 w-full text-gray-700 bg-white border border-gray-300 rounded-md cursor-select">
+              techhyaku@gmail.com
+          </div>
+
           </div>
         </div>
       </div>
