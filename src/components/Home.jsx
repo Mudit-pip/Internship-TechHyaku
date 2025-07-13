@@ -4,7 +4,7 @@ import Logo from '../assets/Logo.png';
 
 const Home = () => {
   return (
-    <section id='home' className="bg-gradient-to-tl from-white via-[#c5fff3] to-white text-black py-20 px-4 md:px-10">
+    <section id='home' className="bg-gradient-to-tl from-white via-[#c5fff3] to-white text-black py-20 px-4 md:px-10 h-screen">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Text Block */}
         <div className="flex-1">

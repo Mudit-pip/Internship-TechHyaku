@@ -1,64 +1,66 @@
-import React from 'react'
-import Robot from '../assets/WhyUs/robot.png'
+import React from 'react';
+import Robot from '../assets/WhyUs/robot.png';
+import second from '../assets/WhyUs/second.png';
+import third from '../assets/WhyUs/third.png';
+import four from '../assets/WhyUs/four.png';
+import FadeInOnScroll from './FadeInOnScroll'; // adjust path if needed
 
 function WhyUs() {
+  const features = [
+    {
+      title: "Innovative Educational Approach:",
+      description: `Hyaku Innovative Technologies offers a unique service by providing qualified teachers to schools equipped with Atal Tinkering Labs (ATL), fostering a culture of curiosity, experimentation, and achievement among students.`,
+      image: Robot,
+    },
+    {
+      title: "Proven Track Record:",
+      description: `The company's students have consistently earned accolades in national robotics competitions, showcasing the caliber of talent cultivated within the Hyaku ecosystem and even representing India at prestigious international events.`,
+      image: second,
+    },
+    {
+      title: "Empowerment and Vision:",
+      description: `Hyaku's vision of empowering students to become active creators in the technological landscape aligns with the evolving needs of the future, emphasizing the judicious harnessing of technology for positive change.`,
+      image: third,
+    },
+    {
+      title: "Commitment to Excellence:",
+      description: `The company's unwavering commitment to shaping a better, technologically enriched world and creating a lasting impact on the future of technology and education makes it a compelling choice for schools and institutions looking to inspire and cultivate the next generation of innovators and creators.`,
+      image: four,
+    },
+  ];
+
   return (
     <section id='whyus'>
-        <div class='flex flex-col bg-gray-100 h-screen w-[95%] ml-10 overflow-x-hidden'>
-        <h2 class="text-5xl font-semibold font-serif m-4 flex justify-center mt-8">Why Choose Us?</h2>
-        <div class="bg-[#245D51] w-full flex flex-col items-center py-10 relative space-y-20">
-            <div class="flex w-[50rem] items-center space-x-10 ">
-                <div class="w-[35rem]">
-                <h3 class='text-4xl text-[#FDF6E3] font-serif underline mb-4'>Innovative Educational Approach:</h3>
-                <p class='text-[#C7E7E1] font-serif text-lg'>
-                    Hyaku Innovative Technologies offers a unique service by providing qualified
-                    teachers to schools equipped with Atal Tinkering Labs (ATL), fostering a culture of
-                    curiosity, experimentation, and achievement among students.
-                </p>
+      <div className='flex flex-col bg-gray-100 min-h-screen w-full overflow-hidden'>
+        <h2 className="text-5xl font-semibold font-serif m-4 flex justify-center mt-8">
+          Why Choose Us?
+        </h2>
+
+        <div className="bg-[#245D51] w-full flex flex-col items-center py-10 relative space-y-20">
+          {features.map((feature, index) => (
+            <React.Fragment key={index}>
+              <FadeInOnScroll>
+                <div className={`flex w-[60rem] items-center justify-between ${index % 2 !== 0 ? "flex-row-reverse ml-[15rem]" : ""}`}>
+                  <div className="w-[35rem]">
+                    <h3 className='text-4xl text-[#FDF6E3] font-serif underline mb-4'>{feature.title}</h3>
+                    <p className='text-[#C7E7E1] font-serif text-lg whitespace-pre-line'>
+                      {feature.description}
+                    </p>
+                  </div>
+                  <img src={feature.image} className='h-48' alt={feature.title} />
                 </div>
-                <img src={Robot} className='h-48' />
-            </div>
-            <div class="w-1 h-10 bg-[#FDF6E3]"></div>
-            <div class="flex w-[50rem] items-center justify-between space-x-10 flex-row-reverse ml-[15rem]">
-                <div class="w-[35rem] ">
-                <h3 class='text-4xl text-[#FDF6E3] font-serif underline mb-4'>Innovative Educational Approach:</h3>
-                <p class='text-[#C7E7E1] font-serif text-lg'>
-                    Hyaku Innovative Technologies offers a unique service by providing qualified
-                    teachers to schools equipped with Atal Tinkering Labs (ATL), fostering a culture of
-                    curiosity, experimentation, and achievement among students.
-                </p>
-                </div>
-                <img src={Robot} className='h-48 ' />
-            </div>
-            <div class="w-1 h-20 bg-[#FDF6E3]"></div>
-            <div class="flex w-264 items-center space-x-10">
-                <div class="w-1/2 ml-12">
-                <h3 class='text-4xl text-[#FDF6E3] font-serif underline mb-4'>Innovative Educational Approach:</h3>
-                <p class='text-[#C7E7E1] font-serif text-lg'>
-                    Hyaku Innovative Technologies offers a unique service by providing qualified
-                    teachers to schools equipped with Atal Tinkering Labs (ATL), fostering a culture of
-                    curiosity, experimentation, and achievement among students.
-                </p>
-                </div>
-                <img src={Robot} className='h-48' />
-            </div>
-            <div class="w-1 h-20 bg-[#FDF6E3]"></div>
-            <div class="flex w-264 items-center space-x-10 flex-row-reverse">
-                <div class="w-1/2 mr-12">
-                <h3 class='text-4xl text-[#FDF6E3] font-serif underline mb-4'>Innovative Educational Approach:</h3>
-                <p class='text-[#C7E7E1] font-serif text-lg'>
-                    Hyaku Innovative Technologies offers a unique service by providing qualified
-                    teachers to schools equipped with Atal Tinkering Labs (ATL), fostering a culture of
-                    curiosity, experimentation, and achievement among students.
-                </p>
-                </div>
-                <img src={Robot} className='h-48' />
-            </div>
+              </FadeInOnScroll>
+
+              {/* Connector Line */}
+              {index !== features.length - 1 && (
+                <div className="w-1 h-20 bg-[#FDF6E3]"></div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
-    </div>
+      </div>
     </section>
-    
-  )
+  );
 }
 
-export default WhyUs
+export default WhyUs;

@@ -8,7 +8,7 @@ import Collaborator1 from '../assets/Collaborations/collaborator1.png'
 function Collaboration() {
   return (
     <section id='collab'>
-      <div class='flex flex-col bg-gray-100 h-screen w-[95%] ml-10 overflow-hidden'>
+      <div class='flex flex-col bg-gray-100 h-[45rem] w-[95%] ml-10 overflow-hidden'>
       <h2 class=' h-24 flex justify-center text-5xl font-semibold m-2'>Our Success</h2>
       <div class='flex flex-wrap justify-center items-center p-4 group'>
         <div class='bg-gray-300 h-48 w-48 flex flex-col justify-center items-center m-2 transition-all duration-500 group-hover:scale-90 hover:scale-105'>
@@ -21,7 +21,7 @@ function Collaboration() {
         </div>
         <div class='bg-gray-300 h-48 w-48 flex flex-col justify-center items-center m-2 transition-all duration-500 group-hover:scale-90 hover:scale-105'>
           <h2 class="font-semibold text-6xl">7+</h2>
-          <p>Different Cources Offered</p>
+          <p>Different Courses Offered</p>
         </div>
         <div class='bg-white h-48 w-48 flex flex-col justify-center items-center m-2 transition-all duration-500 group-hover:scale-90 hover:scale-105'>
           <h2 class="font-semibold text-6xl">10+</h2>
@@ -33,7 +33,7 @@ function Collaboration() {
         </div>
       </div>
 
-      <div class="bg-[#245D51] h-2/3 w-vw ">
+      <div class="bg-[#245D51] h-[60%] w-vw ">
         <h2  class=' h-24 flex justify-center text-4xl text-amber-50 font-semibold m-2'>Our Collaborators</h2>
         <div class="flex  justify-center gap-10 ">
           <div className="flex gap-4 group">
@@ -46,7 +46,9 @@ function Collaboration() {
           </div>
         </div>
       </div>
+      
     </div>
+    <br />
     </section>
     
   )
