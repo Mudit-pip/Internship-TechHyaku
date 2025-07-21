@@ -49,7 +49,7 @@ const Header = () => {
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-[#2c5f55] font-mono text-xl font-bold flex items-center gap-2">
-          Tech Hyaku
+          TechHyaku
           <img className="h-10" src={Logo} alt="Tech Hyaku Logo" />
         </div>
 

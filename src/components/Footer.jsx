@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex gap-4 mt-6 text-xl text-white">
             <a href="https://www.facebook.com" target='_blank'><FaFacebookF /></a>
             <a href="https://www.instagram.com/tech_hyaku/" target='_blank'><FaInstagram /></a>
-            <a href="https://www.linkedin.com/feed/" target='_blank'><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/company/hyaku-innovative-technologies-pvt-ltd/" target='_blank'><FaLinkedinIn /></a>
             <a href="https://www.youtube.com/@techhyaku" target='_blank'><FaYoutube /></a>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               duration={500}
               offset={-70}
               className="cursor-pointer hover:text-white">
-                <li className='hover:text-white mb-1'>Pricing</li>
+                <li className='hover:text-white mb-1'>Kits</li>
               
             </ScrollLink>
             
@@ -122,15 +122,18 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Support</h4>
           <ul className="text-gray-400 text-sm space-y-2">
-            <li className='hover:text-white'>Number</li>
             <li className='hover:text-white'>techhyaku@gmail.com</li>
-            <a href="https://www.instagram.com/tech_hyaku/">
-              <li className='hover:text-white mb-2'>Instagram</li>
-            </a>
             
-            <a href="https://www.linkedin.com/feed/">
-              <li className='hover:text-white'>LinkedIn</li>
+            <li className='hover:text-white'>
+            <a href="https://www.instagram.com/tech_hyaku/" target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
+            </li>
+            <li className='hover:text-white'>
+            <a href="https://www.linkedin.com/company/hyaku-innovative-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            </li>
           </ul>
         </div>
 

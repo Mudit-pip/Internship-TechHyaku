@@ -8,7 +8,7 @@ import Collaborator1 from '../assets/Collaborations/collaborator1.png'
 function Collaboration() {
   return (
     <section id='collab'>
-      <div class='flex flex-col bg-gray-100 h-[45rem] w-[95%] ml-10 overflow-hidden'>
+      <div class='flex flex-col bg-gray-100 h-[100rem] w-[95%] ml-10 overflow-hidden xs:h-[100rem] sm:h-[65rem] xl:h-[52rem] '>
       <h2 class=' h-24 flex justify-center text-5xl font-semibold m-2'>Our Success</h2>
       <div class='flex flex-wrap justify-center items-center p-4 group'>
         <div class='bg-gray-300 h-48 w-48 flex flex-col justify-center items-center m-2 transition-all duration-500 group-hover:scale-90 hover:scale-105'>
@@ -33,19 +33,23 @@ function Collaboration() {
         </div>
       </div>
 
-      <div class="bg-[#245D51] h-[60%] w-vw ">
-        <h2  class=' h-24 flex justify-center text-4xl text-amber-50 font-semibold m-2'>Our Collaborators</h2>
-        <div class="flex  justify-center gap-10 ">
-          <div className="flex gap-4 group">
-            <img src={Collaborator1} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-            <img src={Collaborator2} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-            <img src={Collaborator3} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-            <img src={Collaborator4} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-            <img src={Collaborator5} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-            <img src={Collaborator6} className="h-48 w-48 transition-all duration-500 group-hover:scale-90 hover:scale-105" />
-          </div>
+      <div className="bg-[#245D51] h-auto w-[95%] py-6 sm:h-[45rem] xl:h-[26rem]">
+      <h2 className="h-24 flex justify-center items-center text-2xl sm:text-4xl text-amber-50 font-semibold m-2">
+        Our Collaborators
+      </h2>
+
+      <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-4">
+          <img src={Collaborator1} className="h-28 w-28 sm:h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105" />
+          <img src={Collaborator2} className="h-28 w-28 sm:h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105" />
+          <img src={Collaborator3} className="h-28 w-28 sm:h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105" />
+          <img src={Collaborator4} className="h-28 w-28 sm :h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105" />
+          <img src={Collaborator5} className="h-28 w-28 sm:h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105"/>
+          <img src={Collaborator6} className="h-28 w-28 sm:h-32 sm:w-32 md:h-48 md:w-48 transition-all duration-500 hover:scale-105" />
         </div>
       </div>
+    </div>
+
       
     </div>
     <br />

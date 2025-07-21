@@ -9,7 +9,6 @@ import kit4 from '../assets/Kits/kit4.png';
 const kitsData = [
   {
     title: "Basic Electronics Kit",
-    price: "₹15,000",
     duration: "Est. Completion: 12 weeks",
     features: [
       "15+ projects like LED circuits, motor control, and ON/OFF switches",
@@ -23,7 +22,6 @@ const kitsData = [
   },
   {
     title: "Arduino Starter Kit",
-    price: "₹18,000",
     duration: "Est. Completion: 14 weeks",
     features: [
       "Projects like LED control, piano, radar, digital clock, contactless doorbell",
@@ -37,7 +35,6 @@ const kitsData = [
   },
   {
     title: "Advance Arduino Kit",
-    price: "₹20,000",
     duration: "Est. Completion: 16 weeks",
     features: [
       "Advanced projects like home automation, real-time heart rate monitor, auto fan control",
@@ -51,7 +48,6 @@ const kitsData = [
   },
   {
     title: "Arduino Robot Kit",
-    price: "₹20,000",
     duration: "Est. Completion: 12+ weeks",
     features: [
       "Build 10+ robots: line-follower, Bluetooth bot, robotic arm, 4WD robocar",
@@ -65,7 +61,6 @@ const kitsData = [
   },
   {
     title: "Raspberry Pi Kit",
-    price: "₹25,000",
     duration: "Est. Completion: 14+ weeks",
     features: [
       "Projects like home automation, weather station, retro gaming console",

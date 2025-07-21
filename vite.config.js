@@ -7,6 +7,14 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   theme: {
   extend: {
+    screens: {
+        'xs': '375px',       // custom small screen
+        'sm': '640px',       // default sm
+        'md': '768px',       // default md
+        'lg': '1024px',      // default lg
+        'xl': '1280px',      // default xl
+        '2xl': '1536px',     // default 2xl
+      },
     animation: {
       fadeIn: "fadeIn 0.3s ease-in-out",
     },
