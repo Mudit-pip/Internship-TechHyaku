@@ -13,43 +13,43 @@ const videos = [
     id: 1,
     title: "Video 1",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   },
   {
     id: 2,
     title: "Video 2",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   },
   {
     id: 3,
     title: "Video 3",
     link: "https://www.youtube.com/watch?v=VwGNwAXl730",
-    thumbnail: "https://img.youtube.com/vi/VwGNwAXl730/hqdefault.jpg"
+    
   },
   {
     id: 4,
     title: "Video 4",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   },
   {
     id: 5,
     title: "Video 5",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   },
   {
     id: 6,
     title: "Video 6",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   },
   {
     id: 7,
     title: "Video 7",
     link: "https://www.youtube.com/watch?v=e7rtpnzZ6fk",
-    thumbnail: "https://img.youtube.com/vi/e7rtpnzZ6fk/hqdefault.jpg"
+    
   }
 ];
 

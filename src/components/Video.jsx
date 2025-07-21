@@ -33,7 +33,7 @@ function Video() {
                 {video.title}
               </h3>
 
-              <a href={video.link} >
+              <a href={video.link} target="_blank" rel="noopener noreferrer" >
                 <button className="bg-[#1A6B5C] hover:bg-[#155f51] text-white py-2 px-4 rounded-lg w-full transition-all duration-200 cursor-pointer">
                   Watch Now
                 </button>
